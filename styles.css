@@ -1,7 +1,61 @@
 body {
-    background: rgb(97, 162, 223);
+    background: #14142B;
     color: white;
     text-align: center;
+
+}
+
+.homepage-card {
+    display: flex;
+    justify-content: space-around;
+    
+    width: 550px;
+
+    border: none;
+    border-radius: 10px;
+    background: #0246a7;
+
+    margin-top: 50px;
+    margin-left: 50px;
+
+    padding: 20px;
+
+}
+
+div.start-info {
+    display: block;
+    margin: auto;
+
+    text-align: center;
+
+    width: 200px;
+
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+
+    margin-top: 100px;
+
+}
+
+.homepage-img {
+    width: 300px;
+
+    border: none;
+    border-radius: 10px;
+
+}
+
+.linked-imgs {
+    width:40px;
+    height:40px;
+
+}
+
+.following-italic {
+    margin-top: -20px;
 
 }
 
@@ -9,25 +63,6 @@ div.projects {
     text-align: left;
 }
 
-div.start-info {
-    margin: auto;
-    display: block;
-    width: 200px;
-    padding: 5px;
-
-}
-
-p.following-italic {
-    margin-top: -15px;
-
-}
-
-img.homepage-img {
-    display: block;
-    float: left;
-    max-width: 400px;
-
-    border: 1px solid black;
-    border-radius: 10px;
-
-}
+/*
+    #02187b,#0246a7,#164de5,#1e89ef,#5cdffb
+*/
