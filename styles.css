@@ -1,0 +1,33 @@
+body {
+    background: rgb(97, 162, 223);
+    color: white;
+    text-align: center;
+
+}
+
+div.projects {
+    text-align: left;
+}
+
+div.start-info {
+    margin: auto;
+    display: block;
+    width: 200px;
+    padding: 5px;
+
+}
+
+p.following-italic {
+    margin-top: -15px;
+
+}
+
+img.homepage-img {
+    display: block;
+    float: left;
+    max-width: 400px;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
