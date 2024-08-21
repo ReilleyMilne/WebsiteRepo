@@ -127,22 +127,11 @@ button {
 
     padding: 3px 20px;
 
+    transition: 1s;
+
 }
 
-@keyframes button-transition {
-    from {
-        background: #1d1c1c;
-        color: #a86c11;
-    }
-    to {
-        background: #a86c11;
-        color: #d4d3d0;
-    }
-  }
-
 button:hover {
-    animation-name: button-transition;
-    animation-duration: 1s;
     background: #a86c11;
     color: #d4d3d0;
 
