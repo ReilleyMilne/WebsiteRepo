@@ -107,9 +107,10 @@ body {
 
 div.projects {
     text-align: left;
+
 }
 
-button {
+.info-btn {
     min-width: 225px;
     max-width: 400px;
     min-height: 40px;
@@ -131,8 +132,111 @@ button {
 
 }
 
-button:hover {
+.file-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 160px;
+    height: 50px;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    padding: 0px 6px;
+
+    border: 1px solid #1d1c1c;
     background: #a86c11;
     color: #d4d3d0;
+
+    transition: 0.25s;
+
+}
+
+.code-btn {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    width: 160px;
+    height: 50px;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    padding: 0px 6px;
+
+    border: 1px solid #1d1c1c;
+    background: #a86c1186;
+    color: #d4d3d0;
+
+}
+
+.code-btn p {
+    margin-left: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+
+.hidden {
+    display: none; /* Hides the element */
+}
+.visible {
+    display: block; /* Shows the element */
+}
+
+.code-display {
+    display: flex;
+    justify-content: start;
+
+    width: 80%;
+    height: 650px;
+
+    margin-top: 15px;
+
+    padding: 15px 10px;
+
+}
+
+#code-editor {
+    flex: 1;
+
+    text-align: left;
+    vertical-align: top;
+    resize: none;
+
+    margin-left: 10px;
+
+    background: #d4d3d0;
+    color: #1d1c1c;
+
+    border-bottom: 1px solid #0f0f0f;
+    border-right: 1px solid #0f0f0f; 
+    
+}
+
+.files {
+    width: 160px;
+    padding: 0;
+
+}
+
+.files li {
+    list-style-type: none; 
+
+}
+
+button.info-btn:hover {
+    background: #a86c11;
+    color: #d4d3d0;
+
+}
+
+button.code-btn:hover,
+button.file-btn:hover {
+    background: #a76b1180;
+    color: #d4d3d0
 
 }

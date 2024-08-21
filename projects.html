@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="script.js" type="text/javascript"></script>
         <title>Projects</title>
     </head>
     <body class="default">
@@ -18,13 +19,35 @@
                 <li>
                     <div class="projects">
                         <h2>Project 1: Apartment Price Data Scraper</h2>
-                        <button type="button">Click here to see the code.</button>
+                        <button onclick="toggleVisibility('project1button')" class="info-btn" type="button">Click here to see the code.</button>
+                        <div id="project1button" class="hidden">
+                            <div class="code-display">
+                                <ul class="files">
+                                    <li>
+                                        <button onclick="toggleVisibility('directory1')" class="file-btn" type="button">GeneralWebsiteFiles</button>
+                                        <div id="directory1" class="hidden">
+                                            <button onClick="loadFile('https://raw.githubusercontent.com/ReilleyMilne/RentExtractorProject/main/GeneralWebsiteFiles/CSVEditor.java')" class="code-btn" type="button"><p>CSVEditor.java</p></button>
+                                            <button onClick="loadFile('https://raw.githubusercontent.com/ReilleyMilne/RentExtractorProject/main/GeneralWebsiteFiles/GeneralWebsiteManager.java')" class="code-btn" type="button"><p>GeneralWebsiteManager.java</p></button>
+                                            <button onClick="loadFile('https://raw.githubusercontent.com/ReilleyMilne/RentExtractorProject/main/GeneralWebsiteFiles/PopupManager.java')" class="code-btn" type="button"><p>PopupManager.java</p></button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button onclick="toggleVisibility('directory2')" class="file-btn" type="button">RentExtractionFiles</button>
+                                        <div id="directory2" class="hidden">
+                                            <button onClick="loadFile('https://raw.githubusercontent.com/ReilleyMilne/RentExtractorProject/main/RentExtractionFiles/RandomUserAgent.java')" class="code-btn" type="button"><p>RandomUserAgent.java</p></button>
+                                            <button onClick="loadFile('https://raw.githubusercontent.com/ReilleyMilne/RentExtractorProject/main/RentExtractionFiles/WebsiteExtractor.java')" class="code-btn" type="button"><p>WebsiteExtractor.java</p></button>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <textarea id="code-editor" spellcheck="false" autocorrect="off" autocapitalize="off"></textarea>
+                            </div>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <div class="projects">
                         <h2>Project 2: Budget Visualizer</h2>
-                        <button type="button">Click here to visit the webpage.</button>
+                        <button class="info-btn" type="button">Click here to visit the webpage.</button>
                     </div>
                 </li>
             </ul>
