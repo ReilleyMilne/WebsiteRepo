@@ -19,7 +19,21 @@
                 <li>
                     <div class="projects">
                         <h2>Project 1: Apartment Price Data Scraper</h2>
-                        <button onclick="toggleVisibility('project1button')" class="info-btn" type="button">Click here to see the code.</button>
+                        <div class="project1display">
+                            <div class="url-container">
+                                <h4>Example of input URL's. Feel free to change to your own urls!</h4>
+                                <input type="text" class="info-btn" id="url-input" placeholder="Add a new url...">
+                                <button onclick="addUrl()" class="info-btn info-btn-size" id="add-url-btn">Add URL</button>
+                                <ul id="url-list"></ul>
+                                <textarea class="hidden" id="url-editor" spellcheck="false" autocorrect="off" autocapitalize="off" ></textarea>
+                                <button onclick="processUrls()" class="info-btn info-btn-size submit-btn">Submit URLs</button>
+                            </div>
+                            <div class="outcome">
+                                <h4>Outcome from scraped websites.</h4>
+                                <textarea readonly id="outcome-editor" spellcheck="false" autocorrect="off" autocapitalize="off"></textarea>
+                            </div>
+                        </div>
+                        <button onclick="toggleVisibility('project1button')" class="info-btn info-btn-size" type="button">Click here to see the code.</button>
                         <div id="project1button" class="hidden">
                             <div class="code-display">
                                 <ul class="files">
@@ -46,8 +60,8 @@
                 </li>
                 <li>
                     <div class="projects">
-                        <h2>Project 2: Budget Visualizer</h2>
-                        <button class="info-btn" type="button">Click here to visit the webpage.</button>
+                        <h2>Project 2: Maps Notifier</h2>
+                        <button class="info-btn info-btn-size" type="button">Click here to visit the webpage.</button>
                     </div>
                 </li>
             </ul>
