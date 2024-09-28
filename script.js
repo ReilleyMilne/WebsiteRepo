@@ -65,8 +65,7 @@ async function sendDataToBackend(csvContent) {
             const result = await response.text();
             document.getElementById('outcome-editor').value = result; // Display the result in the outcome textarea
         } catch (error) {
-            document.getElementById('outcome-editor').value = 'Unfortunately netlify, the host of this website only allows for static webpages. Check out the code to make this website functional here!\n
-                https://github.com/ReilleyMilne/ApartmentScraperBackend';
+            document.getElementById('outcome-editor').value = 'Unfortunately netlify, the host of this website only allows for static webpages. Check out the code to make this website functional here!\nhttps://github.com/ReilleyMilne/ApartmentScraperBackend';
         }
     }
 }
